@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+        <!--build:css css/style.min.css-->
+        <link rel="stylesheet" href="css/style.css" />
+        <!--endbuild -->
+    </head>
+    <body class="row align-items-center">
+        <div id="calculator" class="calculator">
+            
+            <div class="calculator-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" class="calculator-icon" width="24" height="24" viewBox="0 0 24 24"><path d="M20 2v20h-16v-20h16zm2-2h-20v24h20v-24zm-13 21h-4v-3h4v3zm0-4h-4v-3h4v3zm0-4h-4v-3h4v3zm5 8h-4v-3h4v3zm0-4h-4v-3h4v3zm0-4h-4v-3h4v3zm5 8h-4v-7h4v7zm0-8h-4v-3h4v3zm0-10h-14v5h14v-5z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="calculator-close" width="24" height="24" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            </div>
+            
+            <input id="display" class="calculator-display col-12" type="text" value="0" />            
+            <div class="calculator-groups btn-group col" role="group" aria-label="First group">
+                <button type="button" data-number="clear" class="calculator-button clear btn btn-secondary col-6">CLEAR</button>
+                <button type="button" data-number="delete" class="calculator-button delete btn btn-secondary col-3"><svg width="24" height="24" class="calculator-delete" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M7 5h17v16h-17l-7-7.972 7-8.028zm7 6.586l-2.586-2.586-1.414 1.414 2.586 2.586-2.586 2.586 1.414 1.414 2.586-2.586 2.586 2.586 1.414-1.414-2.586-2.586 2.586-2.586-1.414-1.414-2.586 2.586z"/></svg></button>
+                <button type="button" data-number="/" class="calculator-button btn btn-secondary col-3">/</button>
+            </div>
+            <div class="calculator-groups btn-group col" role="group" aria-label="First group">
+                <button type="button" data-number="7" class="calculator-button btn btn-secondary col">7</button>
+                <button type="button" data-number="8" class="calculator-button btn btn-secondary col">8</button>
+                <button type="button" data-number="9" class="calculator-button btn btn-secondary col">9</button>
+                <button type="button" data-number="*" class="calculator-button btn btn-secondary col">X</button>
+            </div>
+            <div class="calculator-groups btn-group col" role="group" aria-label="First group">
+                <button type="button" data-number="4" class="calculator-button btn btn-secondary col">4</button>
+                <button type="button" data-number="5" class="calculator-button btn btn-secondary col">5</button>
+                <button type="button" data-number="6" class="calculator-button btn btn-secondary col">6</button>
+                <button type="button" data-number="-" class="calculator-button btn btn-secondary col">-</button>
+            </div>
+            <div class="calculator-groups btn-group col" role="group" aria-label="First group">
+                <button type="button" data-number="1" class="calculator-button btn btn-secondary col">1</button>
+                <button type="button" data-number="2" class="calculator-button btn btn-secondary col">2</button>
+                <button type="button" data-number="3" class="calculator-button btn btn-secondary col">3</button>
+                <button type="button" data-number="+" class="calculator-button btn btn-secondary col">+</button>
+            </div>
+            <div class="calculator-groups btn-group col" role="group" aria-label="First group">
+                <button type="button" data-number="change" class="calculator-button btn btn-secondary col">+/-</button>
+                <button type="button" data-number="0" class="calculator-button btn btn-secondary col">0</button>
+                <button type="button" data-number="." class="calculator-button btn btn-secondary col">.</button>
+                <button type="button" data-number="=" class="calculator-button equal btn btn-secondary col">=</button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!--build:js js/index.min.js -->
+        <script src="js/index.js"></script>
+        <!--endbuild -->
+    </body>
+</html>

@@ -1,0 +1,64 @@
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+$theme: black;
+$calculator-display: #dcdcdc;
+$calculator-font: white;
+$breakpoint-tablet: 640px;
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0!important;
+    padding: 0;
+}
+.calculator{
+    @media (min-width: $breakpoint-tablet) {
+        width: 300px;
+    }    
+    @media (max-width: $breakpoint-tablet) {
+        height: 100%;
+    }    
+    // width: 300px;
+    
+    margin: auto;
+    background-color: $theme;
+    color: $calculator-font;
+    &-icon{
+        fill: $calculator-font;
+        vertical-align: bottom;
+    }
+    &-close{
+        fill: $calculator-font;
+        vertical-align: bottom;
+        float: right;
+    }
+    &-delete{
+        fill: $calculator-font;
+    }
+    &-bar{
+        @media (max-width: $breakpoint-tablet) {
+            height: 5%;
+        }        
+        padding: 1rem;
+    }
+    &-display{
+        @media (max-width: $breakpoint-tablet) {
+            height: 20%;
+        }    
+        background-color: $calculator-display;
+        border: 1px solid $theme;
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: right;        
+    }
+    &-groups{
+        @media (max-width: $breakpoint-tablet) {
+            height: 15%;
+        }    
+        margin: 0;
+        padding: 0;
+    }
+    &-button{
+        background-color: $theme;
+        font-size: 2rem;
+    }
+}
